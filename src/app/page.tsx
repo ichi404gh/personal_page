@@ -69,7 +69,7 @@ export default function Home() {
               className="underline font-bold"
               href="mailto:hi@ichi404.me"
               target="_blank"
-            >e-mail me</Link>
+            >email&nbsp;me</Link>
           </nav>
         </header>
 
@@ -160,7 +160,7 @@ export default function Home() {
             </LinkButton>
             <span>or</span>
             <LinkButton href="mailto:hi@ichi404.me">
-              Send me an e-mail
+              Send me an email
             </LinkButton>
           </div>
         </Section>
