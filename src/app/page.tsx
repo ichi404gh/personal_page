@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <>
       <main className="p-8 container mx-auto xl:max-w-5xl">
-        <header className="flex justify-between">
+        <header className="flex justify-between flex-col sm:flex-row">
           <div>
             <h2 className="text-2xl font-mono">Denis Filatov</h2>
             <h2 className="text-xl font-mono">Software engineer</h2>
@@ -63,7 +63,7 @@ export default function Home() {
               className="underline font-bold"
               href="https://www.linkedin.com/in/denis-filatov-1a192080/"
               target="_blank"
-            >LinkedIn ↗</Link>
+            >LinkedIn&nbsp;↗</Link>
             {' | '}
             <Link
               className="underline font-bold"
