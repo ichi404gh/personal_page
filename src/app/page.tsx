@@ -78,10 +78,8 @@ export default function Home() {
           <p className="">
             10 years of development background, sharp and fresh heads-on skills of python, node,
             react and linux/docker. Previously - dotnet (.net / c#) team lead with experience in
-            frontend.
-            Later - fullstack engineer with focus on frontend. Currently - leading a full stack team
-            and
-            participating as a tech lead.
+            frontend. Later - fullstack engineer with focus on frontend. Currently - leading a full
+            stack team and participating as a tech lead.
           </p>
         </Section>
 
@@ -110,7 +108,7 @@ export default function Home() {
           <p>
             And much more.
             {' '}
-            <Link className="underline font-bold" href="/resume_denis_filatov.pdf">Download full
+            <Link className="underline font-bold" href="/cv.pdf">Download full
               pdf</Link>.
           </p>
         </Section>
