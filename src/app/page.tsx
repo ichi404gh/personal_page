@@ -17,12 +17,15 @@ const experience: ExperienceEntry[] = [
     title: 'CTO',
     date: 'April 2023 - July 2024',
     bullets: [
-      'grew tech department from zero to modern agile team',
-      'hired a team',
-      'implemented VCS, CI/CD, code review practices',
-      'implemented and advocated task/project management system',
-      'participated as tech lead / admin / ops in early stages: buying / owning dedicated servers, implementing monitoring and backups, building production environment for the apps',
-      'planning further development of company products from technical perspective',
+      `grew tech department from zero to a modern agile team`,
+      `handled the handover of the codebase from 5 existing projects developed by the previous tech team and successfully launched them into production on our servers`,
+      `set up monitoring, alerting and backups, and built a production environment for the apps`,
+      `handled 3 DDOS attacks (50k RPS)`,
+      `hired and trained a team - 3 backend dev, 1 frontend dev, 1 QA`,
+      `implemented VCS, CI/CD, and code review practices`,
+      `implemented and advocated task/project management system`,
+      `planning further development of company products from a technical perspective`,
+
     ]
   },
   {
@@ -31,19 +34,20 @@ const experience: ExperienceEntry[] = [
     title: 'Software Engineer',
     date: 'August 2022 - October 2022',
     bullets: [
-      'worked on few modules for aws-lambda pipelines',
-      'worked on integration of e-commerce (shopify) apps to the product',
+      `implemented ETL modules for AWS-lambda pipelines`,
+      `worked on the integration of e-commerce (Shopify) apps to the product`,
     ]
   },
   {
     company: 'Amenify',
     companyUrl: 'https://www.amenify.com/',
     'title': 'Software Engineer',
-    date: 'Novenber 2020 - July 2022',
+    date: 'November 2020 - July 2022',
     bullets: [
-      'implemented GraphQL Schema Federation into a monolithic application, which allowed us to start dividing it into microservices',
-      'created and maintained several web applications within the product’s super-app',
-      'set up integration testing within CI/CD pipeline',
+      `implemented GraphQL Schema Federation into a monolithic application, which allowed us to start dividing it into microservices`,
+      `created and maintained 2 back-office web applications within the product’s super-app`,
+      `set up integration testing within the CI/CD pipeline`,
+      `conducted load testing on a backend`,
     ]
   }
 ];
@@ -73,16 +77,14 @@ export default function Home() {
           </nav>
         </header>
 
-
         <Section title="About me">
           <p className="">
-            10 years of development background, sharp and fresh heads-on skills of python, node,
-            react and linux/docker. Previously - dotnet (.net / c#) team lead with experience in
-            frontend. Later - fullstack engineer with focus on frontend. Currently - leading a full
-            stack team and participating as a tech lead.
+            10 years of development background, sharp and fresh heads-on skills in python, node,
+            react, and linux/docker. Previously, I was the dotnet (.net / c#) team lead with
+            experience in frontend. Later - a full-stack engineer with a focus on frontend.
+            Currently - leading a full stack team and participating as a tech lead.
           </p>
         </Section>
-
 
         <Section title="Experience">
           <div className="lg:grid grid-cols-2 gap-4">
@@ -116,22 +118,21 @@ export default function Home() {
           <div className="space-y-4">
             <NotableProject title="[project name under NDA]">
               <p>
-                A project is adult dating network. Main challenge was to migrate legacy project with
-                many in-house dependencies and unsupported runtime version to new servers, alongside
-                with existing database and media storage with as small downtime as possible. Later,
-                I
-                was involved in solving crises related to website blocking by the regulator. I was
-                also
-                involved in hiring and managing the team, built a CI-CD pipeline, and was involved
-                in
-                conducting work rituals.
+                A project is an adult dating network. The main challenge was to migrate legacy
+                projects with many in-house dependencies and unsupported runtime versions to new servers,
+                alongside existing database and media storage, with as little downtime as possible. Later,
+                I was involved in solving crises related to website blocking by the regulator. I was also
+                involved in hiring and managing the team, building a CI-CD pipeline, and conducting work rituals.
               </p>
             </NotableProject>
             <NotableProject title="Amenify">
               <p>
-                Amenify is Proptech company which powers resident lifestyle services for apartment
-                communities. Cleaners, food and grocery delivery, handyman, chores, car washes, pet
-                care, and more.
+                Amenify is a Proptech company that powers resident lifestyle services for apartment communities.
+                These services include cleaners, food and grocery delivery, handyman, chores, car washes, pet care, and more.
+                At Amenify I worked as a full-stack engineer, working with django and GraphQL on the backend and React-native
+                and Apollo on the frontend. Worked in an international distributed team. I participated in splitting a
+                monolithic application into microservices and also implemented GraphQL Schema Federation for this purpose. 
+                I was also involved in implementing several back-offices for operator clients.
               </p>
               <p>
                 At Amenify I worked as a full-stack engineer, working with django and GraphQL on the
