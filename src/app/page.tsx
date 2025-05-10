@@ -129,10 +129,6 @@ export default function Home() {
               <p>
                 Amenify is a Proptech company that powers resident lifestyle services for apartment communities.
                 These services include cleaners, food and grocery delivery, handyman, chores, car washes, pet care, and more.
-                At Amenify I worked as a full-stack engineer, working with django and GraphQL on the backend and React-native
-                and Apollo on the frontend. Worked in an international distributed team. I participated in splitting a
-                monolithic application into microservices and also implemented GraphQL Schema Federation for this purpose. 
-                I was also involved in implementing several back-offices for operator clients.
               </p>
               <p>
                 At Amenify I worked as a full-stack engineer, working with django and GraphQL on the
