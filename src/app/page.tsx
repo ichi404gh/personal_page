@@ -14,7 +14,7 @@ interface ExperienceEntry {
 const experience: ExperienceEntry[] = [
   {
     company: 'Company name under NDA',
-    title: 'CTO',
+    title: 'Lead Software Engineer',
     date: 'April 2023 - July 2024',
     bullets: [
       `grew tech department from zero to a modern agile team`,
@@ -79,10 +79,11 @@ export default function Home() {
 
         <Section title="About me">
           <p className="">
-            10 years of development background, sharp and fresh heads-on skills in python, node,
-            react, and linux/docker. Previously, I was the dotnet (.net / c#) team lead with
-            experience in frontend. Later - a full-stack engineer with a focus on frontend.
-            Currently - leading a full stack team and participating as a tech lead.
+            Principal Engineer / Tech Lead / Team Lead / Senior Software Engineer with 10 years of 
+            experience in software (python, node.js, react, Linux/docker). As a Lead Engineer, 
+            I built a team from scratch and implemented CI/CD, Code Review, and Agile processes. 
+            Expert in designing and implementing software systems and increasing team productivity. 
+            Looking for an opportunity to make a strategic contribution to the development of technology products.
           </p>
         </Section>
 
@@ -144,8 +145,10 @@ export default function Home() {
         <Section title="Hire me" enabled={true}>
           <p>
             If you see this section, it means I am currently looking for new job opportunities.
-            Particularly as a <span className="font-semibold">CTO</span>, <span
-            className="font-semibold">principal engineer</span> or <span className="font-semibold">lead engineer</span>.
+            Particularly as a&nbsp;
+            <span className="font-semibold">principal engineer</span>,&nbsp;
+            <span className="font-semibold">lead engineer</span> or&nbsp;
+            <span className="font-semibold">senior software engineer</span>.
             Feel free to contact me in any of the ways provided.
           </p>
           <div
