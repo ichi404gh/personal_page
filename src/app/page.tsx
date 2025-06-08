@@ -13,7 +13,7 @@ interface ExperienceEntry {
 
 const experience: ExperienceEntry[] = [
   {
-    company: 'Company name under NDA',
+    company: 'BB Entertainment',
     title: 'Lead Software Engineer',
     date: 'April 2023 - July 2024',
     bullets: [
