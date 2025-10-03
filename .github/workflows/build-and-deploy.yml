@@ -1,32 +1,32 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: Node.js CI
+# name: Node.js CI
 
-on:
-  push:
-    branches: [ "main" ]
+# on:
+#   push:
+#     branches: [ "main" ]
 
-jobs:
-  build:
+# jobs:
+#   build:
 
-    runs-on: ubuntu-latest
+#     runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 21
+#     steps:
+#     - uses: actions/checkout@v4
+#     - uses: actions/setup-node@v4
+#       with:
+#         node-version: 21
 
-    - run: npm ci
-    - run: npm run build
-    - name: copy files via ssh key
-      uses: appleboy/scp-action@v0.1.7
-      with:
-        host: ${{ secrets.DEPLOY_SSH_HOST }}
-        username: ${{ secrets.DEPLOY_SSH_USER }}
-        key: ${{ secrets.DEPLOY_SSH_KEY }}
-        source: "out/*"
-        target: "/var/www/html"
-        strip_components: 1
+#     - run: npm ci
+#     - run: npm run build
+#     - name: copy files via ssh key
+#       uses: appleboy/scp-action@v0.1.7
+#       with:
+#         host: ${{ secrets.DEPLOY_SSH_HOST }}
+#         username: ${{ secrets.DEPLOY_SSH_USER }}
+#         key: ${{ secrets.DEPLOY_SSH_KEY }}
+#         source: "out/*"
+#         target: "/var/www/html"
+#         strip_components: 1
 
