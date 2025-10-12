@@ -1,0 +1,104 @@
+.wrapper {
+    --sidebar-width: 150px;
+    --px: -1rem;
+
+    font-size: small;
+
+    background: white;
+    padding: 1rem;
+
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+
+    min-width: 100vw;
+    min-height: 100vh;
+
+
+    .sidebar {
+        --tx: calc(-100% + var(--px));
+        --ty: 0;
+
+        box-sizing: border-box;
+
+        transform: translate(var(--tx), var(--ty));
+
+        transition: transform 0.3s;
+        z-index: 1;
+        position: absolute;
+        background-color: white;
+        border-radius: 0 0.5rem 0.5rem 0;
+        border: none;
+
+        width: var(--sidebar-width);
+        padding-left: var(--px);
+
+        a {
+            display: block;
+            padding: 0.4rem calc(var(--px) * -1);
+            margin: 0.3rem 0.5rem;
+            border-radius: 0.5rem;
+            &:hover{
+                background-color: aliceblue;
+            }
+        }
+
+        &:hover {
+            --tx: var(--px);
+        }
+    }
+
+    &:has(.main .toggler input:checked) .sidebar {
+        --tx: var(--px);
+    } 
+    &:has(.main .toggler input:hover) .sidebar {
+        --tx: var(--px);
+    }
+
+    &:has(.main .toggler input:not(:checked)) .sidebar {
+        --ty: 38px;
+        border: lightgray 1px solid;
+        border-left: none;
+    }
+
+    .main {
+        transition: margin-left 0.3s;
+
+
+        background-color: aliceblue;
+        border: lightgray 1px solid;
+        border-radius: 0.5em;
+        display: block;
+        flex: 1;
+
+        &:has(input:checked) {
+            margin-left: calc(var(--sidebar-width) + var(--px)); 
+        }
+    }
+}
+
+
+.toggler {
+    position: relative;
+    
+    input {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        cursor: pointer;
+
+    }
+    span {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.4rem;
+        margin: 0.4rem;
+        border-radius: 0.5rem;
+
+        &:hover {
+            background-color: #deebf6;
+        }
+    } 
+}

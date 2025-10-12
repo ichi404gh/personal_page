@@ -22,10 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       {children}
+        <GoogleAnalytics gaId="G-PHE8BEY601"/>
+        <Analytics />
+        <SpeedInsights />
       </body>
-      <GoogleAnalytics gaId="G-PHE8BEY601"/>
-      <Analytics />
-      <SpeedInsights />
     </html>
   );
 }
